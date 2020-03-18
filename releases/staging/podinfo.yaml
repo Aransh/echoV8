@@ -11,7 +11,7 @@ spec:
   releaseName: echo-staging
   chart:
     git: git@github.com:Aransh/echoV8.git
-    path: charts/echo
+    path: charts/echo-staging
     ref: master
   values:
     image:

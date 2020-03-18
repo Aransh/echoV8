@@ -11,7 +11,7 @@ spec:
   releaseName: echo-dev
   chart:
     git: git@github.com:Aransh/echoV8.git
-    path: charts/echo
+    path: charts/echo-dev
     ref: master
   values:
     image:

@@ -11,7 +11,7 @@ spec:
   releaseName: echo-prod
   chart:
     git: git@github.com:Aransh/echoV8.git
-    path: charts/echo
+    path: charts/echo-prod
     ref: master
   values:
     image:

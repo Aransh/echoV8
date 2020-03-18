@@ -1,6 +1,6 @@
 replicas: 2
 
-domain: echoday3.tk
+domain: staging.echoday3.tk
 service: ClusterIP
 
 tls:
@@ -11,7 +11,7 @@ loglevel: info
 
 db:
   enabled: true
-  dbname: echo
+  dbname: echo-staging
   collection: echos
   dburl: bW9uZ29kYnVybDogbW9uZ29kYjovL2FyYW5zaDpwYXNzQG1vbmdvZGItMC5tb25nb2RiLG1vbmdvZGItMS5tb25nb2RiLG1vbmdvZGItMi5tb25nb2RiOjI3MDE3L2VjaG8/YXV0aFNvdXJjZT1hZG1pbgo=
   masterHost: mongodb-0.mongodb

@@ -1,0 +1,22 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: echo-staging
+  namespace: staging
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:staging-*
+spec:
+  releaseName: echo-staging
+  chart:
+    git: git@github.com:Aransh/echoV8.git
+    path: charts/echo
+    ref: staging
+  values:
+    image:
+      repository: aransh/echo
+      tag: staging-713ce3
+    replicaCount: 2
+    hpa: 
+      enabled: false

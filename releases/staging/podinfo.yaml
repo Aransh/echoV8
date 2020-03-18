@@ -18,5 +18,5 @@ spec:
       repository: aransh/echo
       tag: staging-5f3890
     replicaCount: 1
-    hpa:
+    hpa: 
       enabled: false

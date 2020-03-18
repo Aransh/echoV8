@@ -1,4 +1,4 @@
-replicas: 2
+replicas: 1
 
 domain: example.com
 service: LoadBalancer

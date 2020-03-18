@@ -1,25 +1,25 @@
-replicas: 1
+replicas: 2
 
-domain: example.com
-service: LoadBalancer
+domain: echoday3.tk
+service: ClusterIP
 
 tls:
   enabled: false
-  issuerName: issuer
+  issuerName: letsencrypt-prod
 
 loglevel: info
 
 db:
-  enabled: false
+  enabled: true
   dbname: echo
   collection: echos
-  dburl: bW9uZ29kYjovL3VzZXI6cGFzc3dvcmRAMTI3LjAuMC4xOjI3MDE3L2VjaG8/YXV0aFNvdXJjZT1hZG1pbgo=
-  masterHost: db-0.mongodb
-  username: YWRtaW4K
-  password: cGFzc3dvcmQK
+  dburl: bW9uZ29kYnVybDogbW9uZ29kYjovL2FyYW5zaDpwYXNzQG1vbmdvZGItMC5tb25nb2RiLG1vbmdvZGItMS5tb25nb2RiLG1vbmdvZGItMi5tb25nb2RiOjI3MDE3L2VjaG8/YXV0aFNvdXJjZT1hZG1pbgo=
+  masterHost: mongodb-0.mongodb
+  username: YXJhbnNoCg==
+  password: cGFzcwo=
 
 purging:
-  enabled: false
+  enabled: true
   schedule: "0 0 * * *"
 
 resources:
@@ -31,4 +31,4 @@ resources:
     cpu: "500m"
 
 logging:
-  enabled: false
+  enabled: true

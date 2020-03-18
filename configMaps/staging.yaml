@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: config-echo
+    namespace: staging
+data:
+    PORT: "3000"
+    LOGLEVEL: "info"
+    PERSIST: "true"
+    DBNAME: "echo-staging"

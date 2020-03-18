@@ -18,5 +18,3 @@ spec:
       repository: aransh/echo
       tag: dev-7b523a
     replicaCount: 1
-    hpa:
-      enabled: false

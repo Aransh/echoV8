@@ -12,9 +12,12 @@ spec:
   chart:
     git: git@github.com:Aransh/echoV8.git
     path: charts/echo
-    ref: staging
+    ref: master
   values:
     image:
       repository: aransh/echo
       tag: staging-5f3890
     replicaCount: 1
+    hpa:
+      enabled: true
+      maxReplicas: 1

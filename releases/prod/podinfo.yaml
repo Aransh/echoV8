@@ -18,3 +18,6 @@ spec:
       repository: aransh/echo
       tag: 1.0.14
     replicaCount: 1
+    hpa:
+      enabled: true
+      maxReplicas: 1

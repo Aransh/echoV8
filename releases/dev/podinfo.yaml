@@ -12,9 +12,12 @@ spec:
   chart:
     git: git@github.com:Aransh/echoV8.git
     path: charts/echo
-    ref: dev
+    ref: master
   values:
     image:
       repository: aransh/echo
       tag: dev-7b523a
     replicaCount: 1
+    hpa:
+      enabled: true
+      maxReplicas: 1

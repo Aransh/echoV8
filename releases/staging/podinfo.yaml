@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: aransh/echo
-      tag: staging-713ce3
+      tag: staging-5f3890
     replicaCount: 2
-    hpa: 
+    hpa:
       enabled: false

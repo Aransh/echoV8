@@ -17,4 +17,4 @@ spec:
     image:
       repository: aransh/echo
       tag: 1.0.14
-    replicaCount: 2
+    replicaCount: 1

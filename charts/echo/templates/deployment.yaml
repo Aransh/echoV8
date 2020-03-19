@@ -21,7 +21,7 @@ spec:
           - secretRef:
               name: echo-db-secret
           - configMapRef:
-              name: echo-config-echo
+              name: config-echo
         resources:
           requests:
             memory: {{ .Values.resources.requests.memory }}

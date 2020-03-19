@@ -6,4 +6,3 @@ metadata:
 data:
     PORT: "3000"
     LOGLEVEL: "info"
-    DBNAME: "echo"

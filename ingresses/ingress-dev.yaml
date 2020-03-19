@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  namespace: dev
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+  name: echo-ingress
+spec:
+  rules:
+    - host: dev.echoday3.tk
+      http: 
+        paths:
+          - backend:
+              serviceName: echo
+              servicePort: 80

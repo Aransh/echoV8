@@ -2,21 +2,21 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: echo-prod
-  namespace: prod
+  name: echo-dev
+  namespace: dev
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: semver:~1.0
+    filter.fluxcd.io/chart-image: glob:dev-*
 spec:
-  releaseName: echo-prod
+  releaseName: echo-dev
   chart:
     git: git@github.com:Aransh/echoV8.git
-    path: charts/echo-prod
+    path: charts/echo
     ref: master
   values:
     image:
       repository: aransh/echo
-      tag: 1.0.14
+      tag: dev-7b523a
     replicaCount: 1
     hpa:
       enabled: true

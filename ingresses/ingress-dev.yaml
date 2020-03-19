@@ -4,7 +4,7 @@ metadata:
   namespace: dev
   annotations:
     kubernetes.io/ingress.class: "nginx"
-    cert-manager.io/cluster-issuer: issuer
+    cert-manager.io/cluster-issuer: letsencrypt-prod
   name: echo-ingress
 spec:
   rules:
@@ -17,4 +17,4 @@ spec:
   tls:
     - hosts:
       - dev.echoday3.tk
-      secretName: issuer
+      secretName: letsencrypt-prod
